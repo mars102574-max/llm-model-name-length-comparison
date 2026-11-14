@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-model-name-length-comparison"
+version = "0.3.0"
+description = "Deterministic length measurement for API request names"
+readme = "README.en.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/mars102574-max/llm-model-name-length-comparison"
+Issues = "https://github.com/mars102574-max/llm-model-name-length-comparison/issues"
+
+[project.scripts]
+name-length = "name_length_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["name_length_benchmark*"]
