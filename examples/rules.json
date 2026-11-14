@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0",
+  "benchmark": "llm-model-name-length-comparison",
+  "rules": {
+    "spaces": "all",
+    "normalization": "NFC",
+    "count": "codepoints"
+  }
+}
